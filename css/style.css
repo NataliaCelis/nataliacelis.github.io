@@ -393,6 +393,41 @@ nav.primary a.active::after{ transform:scaleX(1); }
 .reveal{ opacity:0; transform:translateY(16px); transition:opacity .5s ease, transform .5s ease; }
 .reveal.in-view{ opacity:1; transform:translateY(0); }
 
+/* ---------- Contact icons (home hero, under photo) ---------- */
+.contact-icons{ display:flex; flex-direction:column; gap:14px; margin-top:24px; }
+.contact-icons a{
+  display:flex; align-items:center; gap:14px;
+  font-size:14.5px; color:var(--gray);
+  transition:color .15s ease;
+}
+.contact-icons a:hover{ color:var(--black); }
+.contact-icons .icon{
+  width:34px; height:34px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--black); flex-shrink:0;
+  transition:transform .2s ease;
+}
+.contact-icons a:hover .icon{ transform:scale(1.08); }
+.contact-icons .icon svg{ width:16px; height:16px; fill:var(--white); }
+.contact-icons .icon.linkedin{
+  background:var(--blue); border-radius:9px;
+}
+.contact-icons .icon.linkedin svg{ fill:var(--white); }
+
+/* ---------- Footer social icons ---------- */
+.footer-icons{ display:flex; gap:12px; }
+.footer-icons a{
+  width:26px; height:26px; border-radius:50%;
+  background:var(--black);
+  display:flex; align-items:center; justify-content:center;
+  transition:background .15s ease, transform .15s ease;
+}
+.footer-icons a:hover{ background:var(--blue); transform:translateY(-2px); }
+.footer-icons a svg{ width:12px; height:12px; fill:var(--white); }
+.footer-icons a.linkedin{
+  border-radius:7px;
+}
+
 footer.site-footer{
   border-top:1px solid var(--line);
   padding:32px 0 48px;
