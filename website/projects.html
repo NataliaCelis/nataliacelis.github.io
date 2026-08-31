@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Natalia Celis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="mark"><span class="box">NC</span> Natalia Celis</a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="campus.html">Campus Life</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="page-head">
+      <h1>Projects</h1>
+      <p class="sub">Nine builds, ranging from a client-facing forecasting engagement to a game agent that tracks a hidden rat using Bayesian inference.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Senior Design — Smurfit Westrock</h3>
+          <p class="desc">Inventory forecasting and risk-flagging system built for Smurfit Westrock, a global packaging manufacturer, to catch aged-inventory risk before it turns into a write-off. Working across a live client dataset covering 60,000+ tons of inventory, the model surfaces which product lines are aging out of usable stock and quantifies the holding-cost impact for leadership review.</p>
+          <div class="stack"><span>Python</span><span>SQL</span><span>Qlik Sense</span><span>Amazon Athena</span><span>Excel</span></div>
+          <div class="plinks">
+            <a class="link" href="https://www.smurfitwestrock.com/" target="_blank" rel="noopener">Client</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Ad Conversion Lift — A/B Testing Platform</h3>
+          <p class="desc">End-to-end experimentation platform built to test whether a new ad creative actually moved the needle. Randomized 588K+ users into test and control groups, modeled the funnel in dbt on top of Snowflake, and shipped Looker Studio dashboards that confirmed a statistically significant 43% lift in conversion.</p>
+          <div class="stack"><span>Python</span><span>SQL</span><span>dbt</span><span>Snowflake</span><span>Looker Studio</span><span>A/B Testing</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/AdLift" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Retinal Segmentation — RetOCTNet</h3>
+          <p class="desc">Deep learning pipeline for segmenting retinal structures in glaucoma research, built to replace a manual review process that was bottlenecking clinicians. The model segments OCT and fundus scans, reaching an average F1 score of 0.88 across experiments, and cuts review time per image from 60 minutes to 2.</p>
+          <div class="stack"><span>Python</span><span>Deep Learning</span><span>Image Segmentation</span><span>Computer Vision</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/RetOCTNet" target="_blank" rel="noopener">Code</a>
+            <a class="link" href="https://feola.bme.gatech.edu/" target="_blank" rel="noopener">Lab</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>SSI Steel Bid Pipeline CRM</h3>
+          <p class="desc">Full-stack CRM built from scratch for Southern Spear Ironworks to replace a bid-tracking process that was living across spreadsheets and email threads. Supabase handles Postgres, authentication, and row-level security on the backend, while a React and Tailwind frontend gives the team one place to track bids from quote to close.</p>
+          <div class="stack"><span>React</span><span>Vite</span><span>Tailwind</span><span>Supabase</span><span>PostgreSQL</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/SSI-CRM" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>FAANG+ Stock Price Predictor</h3>
+          <p class="desc">Forecasting model that predicts next-day closing price for six major tech stocks — Apple, Microsoft, Amazon, Google, Meta, and Nvidia — using linear regression trained on a custom set of technical indicators built from historical price and volume data.</p>
+          <div class="stack"><span>Python</span><span>Linear Regression</span><span>Technical Indicators</span><span>Time-Series</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/StockPredictor" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>NC Election &amp; Census Data Visualization</h3>
+          <p class="desc">Interactive choropleth mapping tool that layers 2024 North Carolina election results over census demographic data at the county level, built to make it easy to explore how voting patterns and demographics move together across the state.</p>
+          <div class="stack"><span>Python</span><span>Data Visualization</span><span>Choropleth Mapping</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/2024election" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>ByteFight Agent</h3>
+          <p class="desc">Competitive game-playing agent built for Georgia Tech's CS 3600 ByteFight tournament, an 8x8-board strategy game played under partial information. The agent tracks a hidden, moving target using Bayesian belief updates over a 64x64 transition matrix, combining noisy sound cues and distance estimates to decide when the expected value of searching outweighs the risk.</p>
+          <div class="stack"><span>Python</span><span>Bayesian Inference</span><span>Markov Models</span><span>Game AI</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/3600ByteFight" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Airline Management System</h3>
+          <p class="desc">Flask-based operations console built on top of a full airline database, giving users a working interface to run stored procedures, pull flight and personnel records, and simulate real day-to-day airline operations end to end.</p>
+          <div class="stack"><span>Flask</span><span>SQL</span><span>Stored Procedures</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/CS-4400-Phase-4" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Socioeconomic Status &amp; Health Indicators — 1st Place</h3>
+          <p class="desc">Statistical analysis project examining how socioeconomic status and health outcomes move together across a large public dataset, which placed 1st among 100+ teams in a data manipulation course and was later used as a teaching example for future students.</p>
+          <div class="stack"><span>Python</span><span>Jupyter</span><span>Pandas</span><span>NumPy</span></div>
+          <div class="plinks">
+            <a class="link" href="https://youtu.be/zqhofl1ofiM?si=qqPV6O8-vsW2pm6j" target="_blank" rel="noopener">Video walkthrough</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/project-placeholder.svg" alt=""></div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="fine">Natalia Celis · Atlanta, GA</span>
+    <span class="fine">Updated 2026</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
