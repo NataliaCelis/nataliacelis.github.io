@@ -152,9 +152,10 @@ nav.primary a.active::after{ transform:scaleX(1); }
   width:56px; height:56px; border-radius:12px;
   background:var(--white); border:1px solid var(--line);
   display:flex; align-items:center; justify-content:center;
-  font-family:var(--mono); font-weight:600; font-size:13px; color:var(--blue);
+  overflow:hidden;
   transition:transform .25s ease, background .25s ease;
 }
+.row .logo img{ width:100%; height:100%; object-fit:cover; }
 .row:hover .logo{ transform:rotate(-3deg) scale(1.05); background:var(--blue-tint); }
 .row .rail{
   font-family:var(--mono); font-size:12.5px; color:var(--gray);
@@ -410,7 +411,7 @@ nav.primary a.active::after{ transform:scaleX(1); }
 .contact-icons a:hover .icon{ transform:scale(1.08); }
 .contact-icons .icon svg{ width:16px; height:16px; fill:var(--white); }
 .contact-icons .icon.linkedin{
-  background:var(--blue); border-radius:9px;
+  background:var(--black); border-radius:9px;
 }
 .contact-icons .icon.linkedin svg{ fill:var(--white); }
 
