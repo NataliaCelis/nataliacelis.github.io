@@ -152,10 +152,10 @@ nav.primary a.active::after{ transform:scaleX(1); }
   width:56px; height:56px; border-radius:12px;
   background:var(--white); border:1px solid var(--line);
   display:flex; align-items:center; justify-content:center;
-  overflow:hidden;
+  overflow:hidden; padding:5px;
   transition:transform .25s ease, background .25s ease;
 }
-.row .logo img{ width:100%; height:100%; object-fit:cover; }
+.row .logo img{ max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; }
 .row:hover .logo{ transform:rotate(-3deg) scale(1.05); background:var(--blue-tint); }
 .row .rail{
   font-family:var(--mono); font-size:12.5px; color:var(--gray);
@@ -281,6 +281,7 @@ nav.primary a.active::after{ transform:scaleX(1); }
   border-radius:18px; overflow:hidden;
   border:1px solid var(--line);
   background:var(--white);
+  cursor:zoom-in;
 }
 .project-card .card-image img{ width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
 .project-card:hover .card-image img{ transform:scale(1.08); }
@@ -380,6 +381,7 @@ nav.primary a.active::after{ transform:scaleX(1); }
 .collage img{
   width:100%; height:100%; object-fit:cover; border-radius:10px;
   transition:transform .3s ease;
+  cursor:zoom-in;
 }
 .collage img:hover{ transform:scale(1.04); }
 .collage img:only-child{ grid-column:1/-1; grid-row:1/4; border-radius:14px; }
@@ -389,6 +391,28 @@ nav.primary a.active::after{ transform:scaleX(1); }
   .club{ grid-template-columns:1fr; }
   .collage{ grid-auto-rows:110px; max-width:360px; }
 }
+
+/* ---------- Lightbox (click-to-enlarge project images) ---------- */
+.lightbox-overlay{
+  position:fixed; inset:0; background:rgba(10,10,10,0.9);
+  display:flex; align-items:center; justify-content:center;
+  z-index:100; opacity:0; pointer-events:none;
+  transition:opacity .2s ease;
+}
+.lightbox-overlay.open{ opacity:1; pointer-events:auto; }
+.lightbox-overlay img{
+  max-width:88vw; max-height:82vh;
+  border-radius:12px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+.lightbox-close{
+  position:absolute; top:24px; right:28px;
+  color:var(--white); font-family:var(--mono); font-size:13px;
+  border:1px solid rgba(255,255,255,0.4); border-radius:999px;
+  padding:7px 16px; cursor:pointer;
+  transition:background .15s ease;
+}
+.lightbox-close:hover{ background:rgba(255,255,255,0.12); }
 
 /* ---------- Scroll reveal ---------- */
 .reveal{ opacity:0; transform:translateY(16px); transition:opacity .5s ease, transform .5s ease; }

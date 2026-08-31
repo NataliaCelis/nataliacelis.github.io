@@ -28,4 +28,33 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     revealTargets.forEach(function (el) { el.classList.add('in-view'); });
   }
+
+  // Lightbox: click a project thumbnail or campus photo to see it full size
+  var cardImages = document.querySelectorAll('.card-image img, .collage img');
+  if (cardImages.length) {
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML = '<span class="lightbox-close">Close ✕</span><img alt="">';
+    document.body.appendChild(overlay);
+    var overlayImg = overlay.querySelector('img');
+
+    function openLightbox(src, alt) {
+      overlayImg.src = src;
+      overlayImg.alt = alt || '';
+      overlay.classList.add('open');
+    }
+    function closeLightbox() {
+      overlay.classList.remove('open');
+    }
+
+    cardImages.forEach(function (img) {
+      img.addEventListener('click', function () {
+        openLightbox(img.currentSrc || img.src, img.alt);
+      });
+    });
+    overlay.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  }
 });
