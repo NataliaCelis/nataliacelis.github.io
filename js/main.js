@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Scroll reveal: fade + rise as rows, cards, and clubs enter the viewport
-  var revealTargets = document.querySelectorAll('.row, .project-card, .club, .course-group');
+  var revealTargets = document.querySelectorAll('.row, .project-card, .club, .course-group, .skills-group');
   revealTargets.forEach(function (el) { el.classList.add('reveal'); });
 
   if ('IntersectionObserver' in window) {
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
     revealTargets.forEach(function (el) { el.classList.add('in-view'); });
   }
 
-  // Lightbox: click a project thumbnail or campus photo to see it full size
-  var cardImages = document.querySelectorAll('.card-image img, .collage img');
+  // Lightbox: click a project thumbnail, campus photo, or company logo to see it full size
+  var cardImages = document.querySelectorAll('.card-image img, .collage img, .row .logo img');
   if (cardImages.length) {
     var overlay = document.createElement('div');
     overlay.className = 'lightbox-overlay';
