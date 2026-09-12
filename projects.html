@@ -32,7 +32,7 @@
       <div class="project-card">
         <div class="card-text">
           <h3>Senior Design — Smurfit Westrock</h3>
-          <p class="desc">Inventory forecasting and risk-flagging system built for Smurfit Westrock, a global packaging manufacturer, to catch aged-inventory risk before it turns into a write-off. Working across a live client dataset covering 60,000+ tons of inventory, the model surfaces which product lines are aging out of usable stock and quantifies the holding-cost impact for leadership review.</p>
+          <p class="desc">Inventory forecasting and risk-flagging system built for Smurfit Westrock, a global packaging manufacturer, to catch aged-inventory risk before it turns into a write-off, saving $10M+. Working across a live client dataset covering 60,000+ tons of inventory, the model surfaces which product lines are aging out of usable stock and quantifies the holding-cost impact for leadership review.</p>
           <div class="stack"><span>Python</span><span>SQL</span><span>Qlik Sense</span><span>Amazon Athena</span><span>Excel</span></div>
           <div class="plinks">
             <a class="link" href="https://www.smurfitwestrock.com/" target="_blank" rel="noopener">Client</a>
@@ -43,10 +43,23 @@
 
       <div class="project-card">
         <div class="card-text">
+          <h3>NYC Capital Projects Delay Analysis</h3>
+          <p class="desc">ML and lexical RAG pipeline built on real NYC capital project schedule data to flag which projects are likely to finish more than 90 days late using only information available at their first schedule update. A regularized logistic regression trained on 64 completed projects reaches 0.811 ROC-AUC, and a TF-IDF retrieval layer surfaces the 3 most similar historical projects for any active project as grounded supporting evidence, no embeddings or vector database required. Scored across 91 NYC capital projects, with re-forecast patterns linked to a 260-day median delivery delay.</p>
+          <div class="stack"><span>Python</span><span>Predictive Modeling</span><span>Lexical RAG</span><span>React / Recharts</span></div>
+          <div class="plinks">
+            <a class="link" href="https://github.com/NataliaCelis/NYCCapitalProjects" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/nyc.png" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
           <h3>Retinal Segmentation — RetOCTNet</h3>
           <p class="desc">Deep learning pipeline for segmenting retinal structures in glaucoma research, built to replace a manual review process that was bottlenecking clinicians. The model segments OCT and fundus scans, reaching an average F1 score of 0.88 across experiments, and cuts review time per image from 60 minutes to 2.</p>
           <div class="stack"><span>Python</span><span>Deep Learning</span><span>Image Segmentation</span><span>Computer Vision</span></div>
           <div class="plinks">
+            <a class="link" href="https://huggingface.co/spaces/NataliaCelis/RetOCTNet" target="_blank" rel="noopener">Try it out</a>
             <a class="link" href="https://github.com/NataliaCelis/RetOCTNet" target="_blank" rel="noopener">Code</a>
             <a class="link" href="https://feola.bme.gatech.edu/" target="_blank" rel="noopener">Lab</a>
           </div>
@@ -64,6 +77,18 @@
           </div>
         </div>
         <div class="card-image"><img src="images/ad.png" alt=""></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Plan Your Ski Trip — Tableau Dashboard</h3>
+          <p class="desc">Interactive Tableau dashboard covering 499 ski resorts worldwide, letting users filter by continent, country, child-friendliness, snowparks, summer skiing, and nightskiing. Includes a world map of resort locations, lift-type breakdowns, price-per-adult-per-day comparisons, and trail length by difficulty level for any selected resort.</p>
+          <div class="stack"><span>Tableau</span><span>Data Visualization</span><span>Dashboard Design</span></div>
+          <div class="plinks">
+            <a class="link" href="https://docs.google.com/presentation/d/12EZqsMvOVNWgR6AybRHkJMlfIqXSGgEZ/edit?usp=sharing&ouid=102619297383822245388&rtpof=true&sd=true" target="_blank" rel="noopener">View Full Dashboard</a>
+          </div>
+        </div>
+        <div class="card-image"><img src="images/skitrip.png" alt=""></div>
       </div>
 
       <div class="project-card">
